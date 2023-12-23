@@ -24,7 +24,7 @@ const LoginForm = () => {
     validationSchema,
     onSubmit: async(values) => {
       const data = JSON.stringify(values)
-      await axios.post('https://mern-authentication-api.onrender.com/auth/login', data, {
+      await axios.post('https://kaied-mern-authentication-api.onrender.com/auth/login', data, {
         headers : { 'Content-Type': 'application/json'}
       }).then(res => 
         {

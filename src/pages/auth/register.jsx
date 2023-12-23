@@ -33,7 +33,7 @@ const RegisterForm = () => {
       for (let value in values) {
         formData.append(value, values[value])
       }
-      await axios.post("https://mern-authentication-api.onrender.com/auth/register", formData, {
+      await axios.post("https://kaied-mern-authentication-api.onrender.com/auth/register", formData, {
         headers : { "Content-Type" : "application/x-www-form-urlencoded" }
       }).then(res => console.log(res)).catch(err => console.log(err))
 
